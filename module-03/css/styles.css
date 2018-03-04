@@ -1,0 +1,97 @@
+@font-face{
+  font-family: "Ubuntu";
+  src: url("fonts/Ubuntu-Light.ttf")
+}
+@font-face{
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Regular.ttf")
+}
+body {
+  
+  width: 1200px;
+  height: 2080px;
+  margin: auto;
+}
+
+.wrapper{
+  margin: auto;
+  width: 900px;
+  height: 100%;
+}
+
+.navigation {
+  margin: 77px auto 103px;
+  text-align: center;
+}
+
+.navigation a{
+font-size: 14px;
+font-family: "Playfair Display", serif;
+text-transform: uppercase;
+text-decoration: none;
+color: #626262;
+}
+
+.navigation li  {
+  display: inline-block;
+}
+
+.navigation li  {
+  display: inline-block;
+  margin: auto 20px;
+  width: 113px;
+}
+
+.main{
+  font-size: 0px;
+  }
+
+.main  div {
+  width: 420px;
+  height: 280px;
+  display: inline-block;
+  margin-bottom: 331px;
+}
+
+.one, .three, .five {
+  margin-right: 60px;
+}
+
+.main h4 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #b4ad9e;
+  font-size: 14px;
+  font-family: "Ubuntu", serif;
+  text-transform: uppercase;
+}
+
+.main h2 {
+  color: #626262;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 30px;
+}
+
+.main p {
+  color: #626262;
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  line-height: 1.7;
+}
+
+.button{
+  text-align: center;
+}
+
+.button a {
+  margin: auto;
+  padding: 22px 33px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  border: solid 1px;
+  vertical-align: middle;
+  color: #626262;
+}
