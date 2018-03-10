@@ -1,0 +1,23 @@
+.wrapper{
+    width: 1110px;
+    margin: auto;
+}
+.navigation{
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.latest news{
+    display: inline-block;
+}
+
+
+.products div{
+    display: inline-block;
+    width: 255px;
+}
