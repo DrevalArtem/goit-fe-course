@@ -34,13 +34,22 @@ body{
 
 header{
     vertical-align: middle;
+    margin-top: 30px;
     margin-bottom: 85px;
+    text-align: justify;
+}
+
+header::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    font-size: 0;
 }
 
 .logo{
     font-size: 30px;
-    padding: 10px;
-    float: left;
+    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
     vertical-align: middle;
@@ -55,12 +64,11 @@ header{
     }
 
 .menu{
-    padding: 10px;
+    display: inline-block;
     text-transform: uppercase;
-    text-align: center;   
     vertical-align: middle; 
-    float: right;
     text-decoration: none;
+    color: #0f0101;
 }
 
 .menu a{
@@ -115,6 +123,13 @@ h2{
 
 .products li:nth-last-child(-n + 4){
     margin-bottom: 0;
+}
+
+.card img{
+    display: block;
+    width: 100%;
+    height: 322px;
+    object-fit: cover;
 }
 
 .line_thick{
@@ -179,15 +194,21 @@ button{
     height: 51px;
     font-family: "Open Sans Light";
     color: #fff;
-    font-size: 16;
+    font-size: 16px;
     border: 1px solid rgb(78, 198, 171);
 }
 
-
+h3 {
+    font-family: "Roboto Black";
+    color: #fff;
     background-color: rgb(50, 50, 50);
-    position: absolute;
-    left: 832px;
-    top: 963px;
-    width: 255px;
-    height: 40px;
-    z-index: 94;
+    width: 100%;
+    padding: 14px 0 13px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+h3:hover{
+    color: #fff;
+    background-color: #1abc9c;
+}
