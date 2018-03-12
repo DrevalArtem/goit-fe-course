@@ -1,0 +1,31 @@
+ul{
+list-style: none;
+}
+
+li{
+    width: 25%;
+    float: left;
+}
+
+li:nth-of-type(3n+1){
+    background: #88292F;
+}
+
+li:nth-of-type(3n+2){
+    background: #5DB7DE;
+}
+
+li:nth-of-type(3n+3){
+    background: #0D5D56;
+}
+a {
+    color: #0E1116;
+    text-decoration: none;
+}
+a:hover {color:yellow}
+
+a::before {content: "\2192";}
+
+section ul::before {
+    content : counter(count-section, upper-roman);
+  }
