@@ -1,26 +1,26 @@
 @font-face{
     font-family: "'Open Sans'";
-    src: url("../fonts/OpenSans-Bold.ttf")
+    src: url("/fonts/OpenSans-Bold.ttf")
 }
 
 @font-face{
     font-family: "'Open Sans Semibold'";
-    src: url("../fonts/OpenSans-SemiBold.ttf")
+    src: url("/fonts/OpenSans-SemiBold.ttf")
 }
 
 @font-face{
     font-family: "'Open Sans Light'";
-    src: url("../fonts/OpenSans-Light.ttf")
+    src: url("/fonts/OpenSans-Light.ttf")
 }
 
 @font-face{
     font-family: "'Roboto'";
-    src: url("../fonts/Roboto-Light.ttf")
+    src: url("/fonts/Roboto-Light.ttf")
 }
 
 @font-face{
     font-family: "'Roboto Black'";
-    src: url("../fonts/Roboto-Black.ttf")
+    src: url("/fonts/Roboto-Black.ttf")
 }
 
 body{
