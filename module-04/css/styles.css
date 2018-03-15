@@ -212,3 +212,11 @@ h3:hover{
     color: #fff;
     background-color: #1abc9c;
 }
+
+h2:after{
+    content: "____";
+    width: 164px;
+    border-bottom: 7px solid rgb(26, 188, 156);
+    margin: auto;
+    margin-bottom: 80px;
+}
