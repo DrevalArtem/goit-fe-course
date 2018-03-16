@@ -1,0 +1,12 @@
+body{
+    counter-reset: count-li
+                    headline;
+}
+
+li{
+    counter-increment: count-li;
+}
+li::before{
+    content: counter(count-li, upper-roman);
+    margin: 15px;
+}
