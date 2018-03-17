@@ -210,21 +210,12 @@ h3:hover{
     color: #fff;
     background-color: #1abc9c;
 }
-<<<<<<< HEAD
 
-h2:after{
-    content: "____";
-=======
 h2::after{
     display:block;
     content: " ";
->>>>>>> cw5
     width: 164px;
     border-bottom: 7px solid rgb(26, 188, 156);
     margin: auto;
     margin-bottom: 80px;
-<<<<<<< HEAD
-=======
-
->>>>>>> cw5
 }
