@@ -1,0 +1,14 @@
+body{
+    min-height: 100vh;
+    background-image: url(https://images.pexels.com/photos/28080/pexels-photo.jpg?w=1920&h=1080&auto=compress&cs=tinysrgb);
+    background-repeat: no-repeat;
+    display: block; 
+}
+
+.kanat{
+    width: 1920px;
+    height: 800px;
+    background-repeat: no-repeat;
+    display: block;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}  
