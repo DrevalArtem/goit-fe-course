@@ -137,13 +137,17 @@ h2{
     margin-bottom: 80px;
 } */
 
-.line_thin{
+h4::after{
+    
+    display:block;
+    content: " ";
     width: 136px;
     border-bottom: 3px solid rgb(26, 188, 156);
-    margin: left;
-    margin-bottom: 30px;
+    margin: auto;
+    margin-left: 0px;
+    margin-top: 15px;
 }
-  
+
 .latest_news{
     list-style: none;
     padding-bottom: 100px;
@@ -173,7 +177,7 @@ h2{
     font-family: "Open Sans Semibold";
     font-size: 18px;
     line-height: 1.44;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     color: #555252;
 }
 

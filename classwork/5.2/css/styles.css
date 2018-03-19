@@ -1,0 +1,54 @@
+.big{
+    display: block; 
+    background-color: #424242;
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+
+.small{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+
+.one, .four, .seven{
+    left: 0px;    
+}
+
+.three, .six, .nine{
+    right: 0px;
+}
+
+.seven, .eight, .nine{
+    bottom: 0px;
+}
+
+.five{
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.four, .six{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.eight, .two{
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.green {
+    background-color: #07B862;
+  }
+  
+  .blue {
+    background-color: #3838C1;
+  }
+  
+  .yellow {
+    background-color: #F5DB3E;
+  }
