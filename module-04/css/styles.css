@@ -100,7 +100,7 @@ h2{
     font-family: "Roboto Black";
     font-size: 48px;
     color: #515151;
-    margin-bottom: 32px;
+    margin-bottom: 132px;
 }
 
 .products{
@@ -217,5 +217,5 @@ h2::after{
     width: 164px;
     border-bottom: 7px solid rgb(26, 188, 156);
     margin: auto;
-    margin-bottom: 80px;
+    margin-top: 33px;
 }
