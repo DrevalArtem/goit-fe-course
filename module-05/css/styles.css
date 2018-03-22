@@ -14,7 +14,7 @@
 }
 
 @font-face{
-    font-family: "Roboto";
+    font-family: "Roboto Light";
     src: url("../fonts/Roboto-Light.ttf")
 }
 
@@ -23,58 +23,54 @@
     src: url("../fonts/Roboto-Black.ttf")
 }
 
-body{
-    min-height: 100vh;
-
-}
 .wrapper{
-    width: 1110px;
+    width: 1170px;
     margin: auto;
 }
 
 header{
-    vertical-align: middle;
-    margin-top: 30px;
-    margin-bottom: 85px;
-    text-align: justify;
-}
-
-header::after{
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 0;
-    font-size: 0;
+width: 100%;
+max-width: 100%;
+margin: 0 auto;
 }
 
 .logo{
+    line-height: 92px;
+    float: left;
     font-size: 30px;
-    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
     vertical-align: middle;
-    font-family: "Roboto", serif;
+    font-family: "Roboto Light", serif;
     color: #555252;
 }
 
 .logo::first-letter{
     color: #1abc9c;
+    font-family: "Roboto Black", serif;
+
     }
 
-.menu{
-    display: inline-block;
+.menu {
+    line-height: 92px;
+    float: right;
     text-transform: uppercase;
-    vertical-align: middle; 
+    vertical-align: middle;
     text-decoration: none;
     color: #0f0101;
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
 }
 
 .menu a{
     font-size: 14px;
     text-decoration: none;
-    margin-right: 30px;
     font-family: "Open Sans";
-    line-height: 11px;
     font-weight: bold;
     color: #0f0101;
 }
@@ -83,7 +79,7 @@ header::after{
 color: #1abc9c;
 }
 
-.menu a:last-child{
+.menu li:last-child{
 margin-right: 0px;
 }
 
@@ -91,6 +87,14 @@ margin-right: 0px;
     display: table;
     content: '';
     clear: both;
+}
+
+.slider{
+    width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 2, 0.52), rgba(0, 0, 2, 0.52)), url("../img/slide1.jpg");
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 h2{
@@ -223,3 +227,17 @@ h2::after{
     margin: auto;
     margin-top: 33px;
 }
+
+
+
+.Rectangle_2 {
+    background-color: rgb(0, 0, 2);
+    opacity: 0.522;
+    position: absolute;
+    left: -112px;
+    top: 84px;
+    width: 1807px;
+    height: 607px;
+    z-index: 73;
+  }
+  
