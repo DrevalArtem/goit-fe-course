@@ -1,6 +1,6 @@
 @font-face{
     font-family: "Open Sans";
-    src: url("../fonts/OpenSans-Bold.ttf")
+    src: url("../fonts/OpenSans-Regular.ttf")
 }
 
 @font-face{
@@ -21,6 +21,11 @@
 @font-face{
     font-family: "Roboto Black";
     src: url("../fonts/Roboto-Black.ttf")
+}
+
+@font-face{
+    font-family: "Pe-icon-7-stroke";
+    src: url("../fonts/Pe-icon-7-stroke.ttf")
 }
 
 .wrapper{
@@ -107,6 +112,15 @@ h2{
     margin-bottom: 132px;
 }
 
+h2::after{
+    display:block;
+    content: " ";
+    width: 164px;
+    border-bottom: 7px solid rgb(26, 188, 156);
+    margin: auto;
+    margin-top: 33px;
+}
+
 .products{
     list-style: none;
     padding-bottom: 100px;
@@ -128,8 +142,40 @@ h2{
 }
 
 .card{
-
+    position: relative;
 }
+
+.card:hover .card-name{
+        background-color: rgb(26, 188, 156);
+}
+
+.card:hover .card-price{
+    background-color: rgb(127, 217, 199);
+}
+
+.card:hover .card-icons{
+    display: block;
+}
+
+.card:hover .rectangle{
+    display: block;
+  }
+
+  .card:hover .addtocart{
+    display: block;
+  }
+  
+  .rectangle{
+    display: none;
+    position: absolute;
+    border-width: 10px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.549;
+    width: 235px;
+    height: 302px;
+  }
 
 .card img{
     display: block;
@@ -158,5 +204,75 @@ h2{
     display: inline-block;
     background-color: rgb(140, 140, 140);
     padding: 13px;
-    width: 30px;
+    width: 32px;
 }
+
+.card-icons{
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.card-icon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px;
+}
+
+.diamond{
+    background-image: url("../ico/diamond.svg");
+}
+
+.shuffle{
+    background-image: url("../ico/shuffle.svg");
+}
+
+.clock{
+    background-image: url("../ico/clock.svg");
+}
+
+.cart{
+    background-image: url("../ico/cart.svg");
+}
+
+.card-icon:hover{
+    background-color: rgb(26, 188, 156);
+}
+
+.addtocart:hover{
+    background-color: rgb(26, 188, 156);
+}
+
+.addtocart {
+    display: inline-block;
+    display: none;
+    text-transform: uppercase;
+    border: 1px solid white;
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+  }
+
+  .addtocart:before {
+      font-size: 30px;
+    font-family: "Pe-icon-7-stroke";
+    content: "\e66e";
+  }
