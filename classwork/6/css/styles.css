@@ -1,0 +1,53 @@
+.wrapper{ 
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.small{
+   width: 30%;
+}
+
+img{
+    width: 100%;
+}
+
+.one, .two, .three{
+    transition-duration: 0.27s;
+}
+
+.seven, .eight, .nine{
+    transition-duration: 0.36s;
+}
+
+.one:hover{
+    transition: 0.27s ease-in-out 0s;
+    transform-origin: top;
+    transform: scale(1.2);
+}
+
+
+.two:hover{
+    transition: 0.27s ease-in-out 0s;
+    transform-origin: center;
+    transform: scale(1.2);
+}
+
+.three:hover{
+    transition: 0.27s ease-in-out 0s;
+    transform-origin: bottom;
+    transform: scale(1.2);
+}
+
+.four:hover, .five:hover, .six:hover{
+    transform: rotate(720deg);
+    transition-duration: 0.27s;
+} 
+
+.seven:hover, .eight:hover, .nine:hover{
+    transform: skew(25deg);
+    transition-duration: 0.36s;
+}

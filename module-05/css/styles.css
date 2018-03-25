@@ -221,17 +221,3 @@ h2::after{
     margin: auto;
     margin-top: 33px;
 }
-
-
-
-.Rectangle_2 {
-    background-color: rgb(0, 0, 2);
-    opacity: 0.522;
-    position: absolute;
-    left: -112px;
-    top: 84px;
-    width: 1807px;
-    height: 607px;
-    z-index: 73;
-  }
-  
