@@ -341,3 +341,18 @@ transform: translateY(-50%);
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+footer{
+    height: 88px;   
+    background-color: rgb(50, 50, 50);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 88px;
+    font-family: "Roboto Black";
+    font-style: 16px;
+    color: #fff;
+}
+
+.footer-color{
+    color: rgb(70, 191, 169);
+}
