@@ -306,12 +306,38 @@ transform: translateY(-50%);
     background-image: url("../ico/angle_right.svg");
   }
  
-  .slider:hover .angle_left{
+  .angle_left:hover{
     background-color: rgb(127, 217, 199);
     opacity: 1;
 }
 
-.slider:hover .angle_right{
+.angle_right:hover{
     background-color: rgb(127, 217, 199);
     opacity: 1;
+}
+.big, .small{
+    display: block;
+}
+
+.big{
+    text-transform: uppercase;
+    font-family: "Roboto Black";
+    font-size: 60px;
+    line-height: 82px;
+    color: #fff;
+}
+
+.small{
+    text-transform: uppercase;
+    font-family: "Roboto Light";
+    font-size: 24px;
+    line-height: 54px;
+    color: #fff;
+}
+
+.slider_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
