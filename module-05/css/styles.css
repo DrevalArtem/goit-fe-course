@@ -269,10 +269,14 @@ h2::after{
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
   }
 
   .addtocart:before {
       font-size: 30px;
     font-family: "Pe-icon-7-stroke";
-    content: "\e66e";
+    content: "\e66e  ";
+    vertical-align: middle;
+    line-height: 50px;
   }
