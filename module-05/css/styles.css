@@ -95,6 +95,7 @@ margin-right: 0px;
 }
 
 .slider{
+    position: relative;
     width: 1600px;
     height: 600px;
     background-image: linear-gradient(rgba(0, 0, 2, 0.52), rgba(0, 0, 2, 0.52)), url("../img/slide1.jpg");
@@ -280,3 +281,37 @@ h2::after{
     vertical-align: middle;
     line-height: 50px;
   }
+
+  .angle_left, .angle_right{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(78, 198, 171);
+    opacity: 0.651;
+    top: 50%;
+}
+
+  .angle_left{
+left: 245px;
+transform: translateY(-50%);
+    background-image: url("../ico/angle_left.svg");
+  }
+
+  .angle_right{
+    right: 245px;
+    transform: translateY(-50%);
+    background-image: url("../ico/angle_right.svg");
+  }
+ 
+  .slider:hover .angle_left{
+    background-color: rgb(127, 217, 199);
+    opacity: 1;
+}
+
+.slider:hover .angle_right{
+    background-color: rgb(127, 217, 199);
+    opacity: 1;
+}
