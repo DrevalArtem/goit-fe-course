@@ -1,0 +1,64 @@
+.card{ 
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+.hero{
+    transition: 0.2s;
+}
+
+.name{
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.about{
+    padding-bottom: 20px;
+    text-align: center;
+    display: block;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 4px red;
+}
+
+.card:hover .hero{
+    transform:rotate(5deg);
+    transition: 0.2s;
+}
+
+.name:hover{
+    transition: 0.2s ease-in-out 0s;
+    transform-origin: center;
+    transform: scale(1.2);
+}
+
+
+.name:hover{
+    color: pink;
+    transition: 0.3s ease-in-out 0s;
+}
+
+button{
+text-align: center;
+    padding: 15px;
+    background-color: #575757;
+    transition: 0.2s;
+    height: 50px;
+    width: 75px;
+    border: 0px;
+}
+
+button:hover{
+    transition: 0.2s;
+    background-color: pink;
+    width: 100%;
+}
