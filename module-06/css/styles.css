@@ -22,6 +22,12 @@
     font-family: "Roboto";
     src: url("../fonts/Roboto-Regular.ttf")
 }
+
+@font-face{
+    font-family: "Roboto-LightItalic";
+    src: url("../fonts/Roboto-LightItalic.ttf")
+}
+
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
@@ -37,7 +43,7 @@ margin-bottom: 130px;
 }
 
 .logo{
-    font-family: "MyriadPro";
+    font-family: "Montserrat-Bold";
     font-size: 30px;
      color: #95e1d3;
      text-decoration: none;
@@ -154,7 +160,6 @@ h4{
 .team-member{
     max-width: 380px;
     position: relative;
-    transition-duration: 200ms;
 }
 
 .team-member:hover .Dix{
@@ -189,7 +194,7 @@ h4{
 
 .team-member:hover .Fertig{
     box-shadow: 10px 10px rgb(149, 225, 211);
-    transition-duration: 200ms ;
+    transition-duration: 200ms;
     transform: translate(-10px, -10px);
     background-image: linear-gradient(  rgba(243, 129, 129, 0.9) , 
                                         rgba(252, 227, 138, 0.9)), 
@@ -204,11 +209,9 @@ h4{
 
 .team-member:hover .social-icons{
     display: block;
-    transition-duration: 200ms;
 }
 
 .social-icons{
-    transition-duration: 200ms;
     display: none;
     position: absolute;
     top: 50%;
@@ -259,6 +262,8 @@ h4{
     display: block;
     font-size: 14px;
     text-transform: uppercase;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
 }
 
 .member-position{
@@ -266,19 +271,50 @@ h4{
     text-align: center;
     font-size: 15px;
     line-height: 24px;
+    font-family: "Roboto-LightItalic";
+    color: rgb(153, 153, 153);
+    margin-bottom: 85px;
 }
 
 footer{
-    height: 88px;   
-    background-color: rgb(50, 50, 50);
-    text-align: center;
-    vertical-align: middle;
-    line-height: 88px;
-    font-family: "Roboto Black";
-    font-style: 16px;
-    color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(153, 153, 153);
+    height: 60px;
 }
 
-.footer-color{
-    color: rgb(70, 191, 169);
+.copyrights{
+    font-family: "Montserrat";
+    font-style: 14px;
+    color: rgb(51, 51, 51);
+}
+
+.subscribe{
+    text-align: center;
+}
+
+input[type="email"] {
+font-size: 15px; 
+font-family: "Roboto-LightItalic";
+width: 230px;
+padding: 9px;
+
+}
+
+input[type="submit"] {
+    font-family: "Montserrat-Bold";
+    height: 40px;
+    width: 150px;
+    background-color: #95e1d3;
+    border: none;
+    color: #fff;
+    margin-left: -4px;
+}
+
+.copyrights a{
+    color: rgb(243, 129, 129);
+    text-decoration: none;
 }
