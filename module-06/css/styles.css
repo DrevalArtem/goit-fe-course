@@ -18,7 +18,10 @@
     src: url("../fonts/KaushanScript-Regular.ttf")
 }
 
-
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf")
+}
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
@@ -68,6 +71,8 @@ h3{
     font-size: 24px;
     vertical-align: middle; 
     text-align: center;  
+    color: #515151;
+    padding-bottom: 20px;
 }
 
 h2{
@@ -92,9 +97,7 @@ h2::after{
 .services{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-    
+    justify-content: space-between;    
 }
 
 .service-content{
@@ -114,6 +117,7 @@ h2::after{
 
 .service-name{
     display: block;
+    font-family: "Montserrat";
     font-size: 14px;
     text-transform: uppercase;
     padding-bottom: 20px;
@@ -121,9 +125,24 @@ h2::after{
 }
 
 .service-description{
+    font-family: "Roboto";
     font-size: 15px;
+    line-height: 24px;
     display: block;
+    color: rgb(153, 153, 153);
 }
+
+h4{
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(153, 153, 153);
+    width: 980px;
+    margin: 0 auto;
+    margin-bottom: 95px;
+}
+
 
 .team{
     display: flex;
