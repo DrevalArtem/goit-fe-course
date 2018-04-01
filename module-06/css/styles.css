@@ -10,12 +10,12 @@
 
 @font-face{
     font-family: "Montserrat-Bold";
-    src: ("../fonts/Montserrat-Bold.ttf")
+    src: url("../fonts/Montserrat-Bold.ttf")
 }
 
 @font-face{
     font-family: "KaushanScript";
-    src: ("../fonts/KaushanScript-Regular.ttf")
+    src: url("../fonts/KaushanScript-Regular.ttf")
 }
 
 
@@ -64,10 +64,10 @@ border-bottom: 3px solid rgb(243, 129, 129);
 }
 
 h3{
+    font-family: "KaushanScript";
     font-size: 24px;
     vertical-align: middle; 
     text-align: center;  
-    font-family: "KaushanScript";
 }
 
 h2{
