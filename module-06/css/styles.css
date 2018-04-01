@@ -1,10 +1,26 @@
 @font-face{
-    font-family: "Open Sans";
-    src: url("../fonts/OpenSans-Regular.ttf")
+    font-family: "MyriadPro";
+    src: url("../fonts/MyriadPro-Regular.otf")
 }
 
+@font-face{
+    font-family: "Montserrat";
+    src: ("../fonts/Montserrat-Regular.ttf")
+}
+
+@font-face{
+    font-family: "Montserrat-Bold";
+    src: ("../fonts/Montserrat-Bold.ttf")
+}
+
+@font-face{
+    font-family: "KaushanScript";
+    src: ("../fonts/KaushanScript-Regular.ttf")
+}
+
+
 .wrapper{
-    max-width: 1180px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -18,8 +34,9 @@ margin-bottom: 130px;
 }
 
 .logo{
+    font-family: "MyriadPro";
     font-size: 30px;
-     color: #1abc9c;
+     color: #95e1d3;
      text-decoration: none;
 }
 
@@ -33,9 +50,8 @@ margin-bottom: 130px;
 .menu a{
     font-size: 14px;
     text-decoration: none;
-    font-family: "Open Sans";
-    font-weight: bold;
-    color: #1abc9c;
+    font-family: "Montserrat";
+    color: #95e1d3;
     border-bottom: 3px solid transparent;
     justify-content: space-between;
     margin-left: 60px;
@@ -51,13 +67,14 @@ h3{
     font-size: 24px;
     vertical-align: middle; 
     text-align: center;  
+    font-family: "KaushanScript";
 }
 
 h2{
     text-transform: uppercase;
     text-align: center;   
     vertical-align: middle; 
-    font-family: "Roboto Black";
+    font-family: "Montserrat-Bold";
     font-size: 30px;
     color: #515151;
     margin-bottom: 110px;
@@ -72,224 +89,164 @@ h2::after{
     margin-top: 45px;
 }
 
-.products{
-    list-style: none;
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+}
+
+.service-content{
+    max-width: 300px;
+}
+
+.service{
+    display: flex;
     padding-bottom: 100px;
 }
 
-.products li{
-    float: left;
-    width: 255px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+
+.service-ico{
+    height: 35px;
+    padding: 0 25px;
 }
 
-.products li:nth-child(4n){
-    margin-right: 0;
+.service-name{
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
 }
 
-.products li:nth-last-child(-n + 4){
-    margin-bottom: 0;
+.service-description{
+    font-size: 15px;
+    display: block;
 }
 
-.card{
+.team{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.team-member{
+    max-width: 380px;
     position: relative;
+    transition-duration: 200ms;
 }
 
-.card:hover .card-name{
-        background-color: rgb(26, 188, 156);
+.team-member:hover .Dix{
+    box-shadow: 10px 10px rgb(149, 225, 211);
+    transition-duration: 200ms ;
+    transform: translate(-10px, -10px);
+    background-image: linear-gradient(  rgba(243, 129, 129, 0.9) , 
+                                        rgba(252, 227, 138, 0.9)), 
+                                        url("../img/Mathew Dix.jpg");
+    }
+
+.Dix{
+    width: 380px;
+    height: 470px;
+    background-image: url("../img/Mathew Dix.jpg");
 }
 
-.card:hover .card-price{
-    background-color: rgb(127, 217, 199);
+.team-member:hover .Campbell{
+    box-shadow: 10px 10px rgb(149, 225, 211);
+    transition-duration: 200ms ;
+    transform: translate(-10px, -10px);
+    background-image: linear-gradient(  rgba(243, 129, 129, 0.9) , 
+                                        rgba(252, 227, 138, 0.9)), 
+                                        url("../img/Christopher Campbell.jpg");
+    }
+
+.Campbell{
+    width: 380px;
+    height: 470px;
+    background-image: url("../img/Christopher Campbell.jpg");
 }
 
-.card:hover .card-icons{
+.team-member:hover .Fertig{
+    box-shadow: 10px 10px rgb(149, 225, 211);
+    transition-duration: 200ms ;
+    transform: translate(-10px, -10px);
+    background-image: linear-gradient(  rgba(243, 129, 129, 0.9) , 
+                                        rgba(252, 227, 138, 0.9)), 
+                                        url("../img/Michael Fertig.jpg");
+    }
+
+.Fertig{
+    width: 380px;
+    height: 470px;
+    background-image: url("../img/Michael Fertig.jpg");
+}
+
+.team-member:hover .social-icons{
     display: block;
+    transition-duration: 200ms;
 }
 
-.card:hover .rectangle{
-    display: block;
-  }
-
-  .card:hover .addtocart{
-    display: block;
-  }
-  
-  .rectangle{
+.social-icons{
+    transition-duration: 200ms;
     display: none;
     position: absolute;
-    border-width: 10px;
-    border-color: rgb(255, 255, 255);
-    border-style: solid;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.549;
-    width: 235px;
-    height: 302px;
-  }
-
-.card img{
-    display: block;
-    height: 322px;
-    object-fit: cover;
-}
-
-.card-content{
-    font-size: 0px;
-        font-family: "Roboto Black", sans-serif;
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        
-}
-.card-name{
-    font-size: 18px;
-    display: inline-block;
-    background-color: rgb(50, 50, 50);
-    width: 171px;
-    padding: 13px;
-}
-
-.card-price{
-    font-size: 18px;
-    text-align: center;
-    display: inline-block;
-    background-color: rgb(140, 140, 140);
-    padding: 13px;
-    width: 32px;
-}
-
-.card-icons{
-    display: none;
-    text-decoration: none;
-    position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
 }
 
-.card-icon{
+.social-icon{
+    margin-right: -3px;
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid white;
-    text-decoration: none;
+    width: 55px;
+    height: 55px;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 5px;
+    background-color: #fce38a;
 }
 
-.diamond{
-    background-image: url("../ico/diamond.svg");
+.social-icon:hover{
+    background-color: rgb(149, 225, 211);
 }
 
-.shuffle{
-    background-image: url("../ico/shuffle.svg");
+.facebook{
+    background-image: url("../ico/facebook.png");
 }
 
-.clock{
-    background-image: url("../ico/clock.svg");
+.twitter{
+    background-image: url("../ico/twitter.png");
 }
 
-.cart{
-    background-image: url("../ico/cart.svg");
+.pinterest{
+    background-image: url("../ico/pinterest.png");
 }
 
-.card-icon:hover{
-    background-color: rgb(26, 188, 156);
+.instagram{
+    background-image: url("../ico/instagram.png");
 }
 
-.addtocart:hover{
-    background-color: rgb(26, 188, 156);
+
+
+.member-photo{
+    margin-bottom: 30px;
 }
 
-.addtocart {
-    display: inline-block;
-    display: none;
-    text-transform: uppercase;
-    border: 1px solid white;
-    background-color: rgb(50, 50, 50);
-    position: absolute;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 175px;
-    height: 50px;
-    color: #fff;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
+.member-name{
     text-align: center;
-    vertical-align: middle;
-    line-height: 50px;
-  }
-
-  .addtocart:before {
-      font-size: 30px;
-    font-family: "Pe-icon-7-stroke";
-    content: "\e66e  ";
-    vertical-align: middle;
-    line-height: 50px;
-  }
-
-  .angle_left, .angle_right{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: rgb(78, 198, 171);
-    opacity: 0.651;
-    top: 50%;
-}
-
-  .angle_left{
-left: 245px;
-transform: translateY(-50%);
-    background-image: url("../ico/angle_left.svg");
-  }
-
-  .angle_right{
-    right: 245px;
-    transform: translateY(-50%);
-    background-image: url("../ico/angle_right.svg");
-  }
- 
-  .angle_left:hover{
-    background-color: rgb(127, 217, 199);
-    opacity: 1;
-}
-
-.angle_right:hover{
-    background-color: rgb(127, 217, 199);
-    opacity: 1;
-}
-.big, .small{
     display: block;
-}
-
-.big{
+    font-size: 14px;
     text-transform: uppercase;
-    font-family: "Roboto Black";
-    font-size: 60px;
-    line-height: 82px;
-    color: #fff;
 }
 
-.small{
-    text-transform: uppercase;
-    font-family: "Roboto Light";
-    font-size: 24px;
-    line-height: 54px;
-    color: #fff;
-}
-
-.slider_text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.member-position{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
 }
 
 footer{
