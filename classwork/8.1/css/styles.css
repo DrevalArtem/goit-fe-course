@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    height: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-width: 320px;
+  }
+  
+  .left-sidebar, .right-sidebar {
+    width: 25%;
+  }
+  
+  .left-sidebar {
+    background-color: #EDCBB1;
+  }
+  
+  .right-sidebar {
+    background-color: #C17767;
+  }
+  
+  .content {
+    width: 50%;
+    background-color: #6D98BA;
+  }
+  
