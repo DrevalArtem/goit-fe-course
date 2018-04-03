@@ -292,8 +292,7 @@ input[type="email"] {
 font-size: 15px; 
 font-family: "Roboto-LightItalic";
 width: 230px;
-padding: 9px;
-
+height: 34px;
 }
 
 input[type="submit"] {
@@ -304,6 +303,7 @@ input[type="submit"] {
     border: none;
     color: #fff;
     margin-left: -4px;
+    font-size: 15px;
 }
 
 .copyrights a{
