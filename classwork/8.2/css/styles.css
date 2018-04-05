@@ -1,0 +1,47 @@
+.wrapper{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 960px;
+
+}
+.container {
+    display: flex;
+    height: 10vh;
+
+  
+  }
+  
+  .main {
+    display: flex;
+    justify-content: space-between;
+    height: 74vh;
+  }
+
+  .yellow{
+    width: 100%;
+    background-color: rgba(251, 255, 0, 0.515);
+  }
+  
+  .left-sidebar {
+    width: 54.17%;
+  }
+
+  .content, .right-sidebar {
+    width: 20.83%;
+    background-color: #6D98BA;
+  }
+  
+
+  .left-sidebar {
+    background-color: #EDCBB1;
+  }
+  
+  .right-sidebar {
+    background-color: #C17767;
+  }
+  

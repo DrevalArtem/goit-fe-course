@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 310px;
+  max-width: 960px;
+}
+
+.content{
+  background-color: #779FA1;
+  height: 50px;
+}
+
+.sidebar{
+  background-color: #F2F3AE;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    display: flex;
+flex-direction: row-reverse;
+  }
+
+  .sidebar{
+    width: 20%;
+  }
+
+  .content{
+    width: 80%;
+  }
+}
