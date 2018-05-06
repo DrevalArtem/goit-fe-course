@@ -37,7 +37,7 @@ header {
     background-size: cover;
     background-position: 50% 50%;
     padding-top: 2.5rem;
-    /* padding-bottom: 8.625rem; */
+    padding-bottom: 8.625rem;
     color: #fff;
 }
 
@@ -204,7 +204,7 @@ main h2 {
 
 .img-wrap > img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 50%;
   }
@@ -246,15 +246,18 @@ main h2 {
 }
 
 .img-icon {
-    width: 33px;
-    height: 33px;
-    border: 4px solid #fff;
-    border-radius: 40px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    box-sizing: border-box;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 5px solid #fff;
     bottom: 0;
     right: 0;
-}
+    border-radius: 50%;
+  }
 
 .icon1 {
     background: #ff4e50;
