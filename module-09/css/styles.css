@@ -1,0 +1,233 @@
+html {
+    font-size: 14px;
+}
+
+.masthead {
+    background-image: url('../img/bg-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 1.5rem;
+    padding-bottom: 10rem;
+} 
+
+.header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+}
+
+.btn {
+    color: #fff;
+    padding: 0.625rem;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border: 0.1428rem solid transparent;
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.btn:hover {
+    border: 0.1428rem solid white;
+    border-radius: 30px;
+}
+
+.main-title {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.714rem;
+    color: white;
+}
+
+.hero-caption {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 2.142rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.071rem;
+    text-align: center;
+    color: white;
+
+}
+.hero-banner {
+    text-align: center;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 1.285rem;
+    line-height: 1.785rem;
+    margin-bottom: 1.071rem;
+}
+
+.hero-btn {
+    display: block;
+    height: 2.857rem;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    line-height: 2.857rem;
+    border-radius: 1.785rem;
+    border: 0.1428rem solid #ff4e50; 
+    color: white;
+}
+
+.hero-btn:hover{
+    background-color: #ff4e50;
+    }
+
+/* TEAM SECTION */
+.team-section {
+    padding-top: 5rem;
+    padding-bottom: 4.2857rem;
+}
+.team-title {
+    color: black;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1.571rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.team-list {
+    margin-bottom: 1.785rem;
+}
+
+.team-card {
+    text-align: center;
+}
+.card-picture {
+    position: relative;
+    width: 8.571rem;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+.team-card-img {
+    display: block;
+    width: 8.571rem;
+    border-radius: 50%;
+}
+.team-card-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2.285rem;
+    width: 2.285rem;
+    border-radius: 50%;
+    border: 0.2857rem solid white;
+}
+.icon-1 {
+    background-color: #ea4f53;
+    background-image: url('../img/icon-1.png');
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+.icon-2 {
+    background-color: #ffa507;
+    background-image: url('../img/icon-2.png');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.icon-3 {
+    background-color: #1cd7ad;
+    background-image: url('../img/icon-3.png');
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+.icon-4 {
+    background-image: url('../img/icon-4.png');
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-color: #4e73db;
+}
+.team-card-name {
+    color: black;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.team-card-disc {
+    color: #8f8f8f;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+}
+
+.teammate-button {
+    display: block;
+    height: 2.857rem;
+    background-color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    line-height: 2.857rem;
+    border-radius: 1.785rem;
+    border: 0.1428rem solid #ea4f53;
+    color: #ea4f53;
+    text-align: center;
+}
+
+.teammate-button:hover {
+background-color: #ea4f53;
+color: white;
+}
+
+
+@media (max-width: 767px) {
+    .team-list-item:not(:last-child) {
+        margin-bottom: 1.785rem;
+    }
+    .header-menu {
+        margin-bottom: 7.8rem;
+    }
+  
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .team-list-item:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 1.785rem;
+    }
+}
+/* MIN WIDTH 768 */
+@media (min-width: 768px) {
+    .masthead {
+        padding-top: 3.214rem;
+        padding-bottom: 16.785rem;
+    }
+    .header {
+        margin-bottom: 10.7rem;
+       flex-direction: row-reverse;
+    }
+    
+   .hero-caption {
+        font-size: 3.71rem;
+        line-height: 4.64rem;
+        margin-bottom: 2.428rem;
+    }
+    .hero-banner {
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        margin-bottom: 2.3rem;
+    }
+    .team-section {
+        min-height: 53rem;
+    }
+    .team-title {
+        margin-bottom: 2.5rem;
+    }
+  
+} 
+
+@media (min-width: 992px) {
+    .team-section {
+        min-height: 36rem;
+    }    
+   }
